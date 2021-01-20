@@ -19,7 +19,12 @@ module.exports = {
         sans: ['Spartan', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
+        sm: '.8125rem',
         base: '.9375rem',
+      },
+      maxWidth: {
+        88: '21.875rem',
+        112: '27.8125rem',
       },
     },
   },
