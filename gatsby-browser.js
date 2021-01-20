@@ -1,2 +1,5 @@
 import 'focus-visible'
+import '@fontsource/spartan/latin-400.css'
+import '@fontsource/spartan/latin-500.css'
+import '@fontsource/spartan/latin-700.css'
 import '@/styles/global.css'

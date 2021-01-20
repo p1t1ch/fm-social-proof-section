@@ -3,36 +3,23 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    colors: {
+      primary: {
+        light: 'hsl(334, 80%, 67%)',
+        DEFAULT: 'hsl(300, 43%, 22%)',
+      },
+      neutral: {
+        light: 'hsl(301, 23%, 96%)',
+        DEFAULT: 'hsl(0, 0%, 100%)',
+        dark: 'hsl(301, 10%, 53%)',
+      },
+    },
     extend: {
       fontFamily: {
-        sans: ['Kumbh Sans', ...defaultTheme.fontFamily.sans],
-      },
-      colors: {
-        primary: {
-          light: 'hsl(185, 75%, 39%)',
-          DEFAULT: 'hsl(228, 23%, 23%)',
-          dark: 'hsl(228, 10%, 47%)',
-        },
-        neutral: 'hsl(228, 9%, 92%)',
+        sans: ['Spartan', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        xs: '.625rem',
-      },
-      maxWidth: {
-        sm: '21.875rem',
-      },
-      borderWidth: {
-        5: '5px',
-      },
-      padding: {
-        18: '4.5rem',
-      },
-      translate: {
-        'circle-x': '-103%',
-        'circle-y': '-89%',
-      },
-      letterSpacing: {
-        widest: '.15em',
+        base: '.9375rem',
       },
     },
   },
