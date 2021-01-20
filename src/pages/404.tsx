@@ -1,15 +1,14 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
-import Layout from '@/components/Layout'
 import Seo from '@/components/Seo'
 
-const NotFoundPage = ({ location }: PageProps) => {
+function NotFoundPage({ location }: PageProps) {
   return (
-    <Layout>
+    <main>
       <Seo />
-      <h1>Error 404</h1>
+      <h1 className="text-center text-xl">Error 404</h1>
       <p>Path &ldquo;{location.pathname}&rdquo; is not defined</p>
-    </Layout>
+    </main>
   )
 }
 
