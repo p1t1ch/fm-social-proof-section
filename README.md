@@ -10,3 +10,8 @@
     />
   </a>
 </p>
+
+For this challenge:
+
+1. More practice with Tailwind
+1. Play with grids and responsive styles
