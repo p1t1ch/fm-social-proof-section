@@ -16,7 +16,7 @@ function IndexPage() {
       <Seo title="Frontend Mentor: Social proof section" />
       <BgPatternTop className="absolute top-0 left-0" />
       <BgPatternBottom className="absolute bottom-0 right-0" />
-      <main className="max-w-xl w-full mx-auto py-20 px-6 xl:px-0">
+      <main className="max-w-xl w-full mx-auto py-20 px-6 xl:px-0 z-10">
         <section className="grid gap-10 md:gap-4 md:grid-cols-2 mb-12 md:mb-18">
           <div className="md:max-w-lg w-full text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
