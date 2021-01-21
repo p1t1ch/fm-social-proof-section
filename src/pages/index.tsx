@@ -12,7 +12,7 @@ import { ReactComponent as BgPatternBottom } from '@/icons/bg-pattern-bottom.svg
 
 function IndexPage() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-hidden">
       <Seo title="Frontend Mentor: Social proof section" />
       <BgPatternTop className="absolute top-0 left-0" />
       <BgPatternBottom className="absolute bottom-0 right-0" />
