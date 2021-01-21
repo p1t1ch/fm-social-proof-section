@@ -8,7 +8,7 @@ function Ratings({ children, className = '', ...props }: RatingsProps) {
   return (
     <ul className={`grid gap-4 ${className}`} {...props}>
       {React.Children.map(children, (child, i) => (
-        <li className={`${i ? `ml-${12 * i}` : ''}`}>{child}</li>
+        <li className={`${i ? `md:ml-${12 * i}` : ''}`}>{child}</li>
       ))}
     </ul>
   )

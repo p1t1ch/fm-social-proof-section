@@ -9,7 +9,7 @@ interface ReviewProps extends React.HTMLProps<HTMLDivElement> {
 function Review({ author, avatar, children, className = '', ...props }: ReviewProps) {
   return (
     <article
-      className={`grid gap-6 grid-cols-review max-w-md w-full py-10 px-8 text-sm text-neutral bg-primary rounded-lg ${className}`}
+      className={`grid gap-6 grid-cols-review md:max-w-md w-full py-10 px-8 text-sm text-neutral bg-primary rounded-lg ${className}`}
       {...props}
     >
       <img src={avatar} alt={`${author} avatar`} width={40} height={40} className="rounded-full" />

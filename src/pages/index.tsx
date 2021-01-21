@@ -7,19 +7,21 @@ import Reviews from '@/components/Reviews'
 import imageColton from '@/images/image-colton.jpg'
 import imageIrene from '@/images/image-irene.jpg'
 import imageAnne from '@/images/image-anne.jpg'
-import { ReactComponent as BgPatternTopDesktop } from '@/icons/bg-pattern-top-desktop.svg'
-import { ReactComponent as BgPatternBottomDesktop } from '@/icons/bg-pattern-bottom-desktop.svg'
+// import { ReactComponent as BgPatternTopDesktop } from '@/icons/bg-pattern-top-desktop.svg'
+// import { ReactComponent as BgPatternBottomDesktop } from '@/icons/bg-pattern-bottom-desktop.svg'
 
 function IndexPage() {
   return (
     <div className="grid grid-area-container min-h-screen">
       <Seo title="Frontend Mentor: Social proof section" />
-      <BgPatternTopDesktop className="grid-area place-self-start" />
-      <BgPatternBottomDesktop className="grid-area place-self-end" />
-      <main className="grid-area max-w-xl w-full mx-auto py-20 px-6 sm:px-0">
-        <section className="grid gap-10 grid-cols-2 mb-18">
-          <div className="max-w-lg w-full mr-4">
-            <h1 className="text-5xl font-bold tracking-tight mb-6">10,000+ of our users love our products.</h1>
+      {/* <BgPatternTopDesktop className="grid-area place-self-start" /> */}
+      {/* <BgPatternBottomDesktop className="grid-area place-self-end" /> */}
+      <main className="grid-area max-w-xl w-full mx-auto py-20 px-6 xl:px-0">
+        <section className="grid gap-10 md:gap-4 md:grid-cols-2 mb-12 md:mb-18">
+          <div className="md:max-w-lg w-full text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+              10,000+ of our users love our products.
+            </h1>
             <p className="font-medium tracking-tight">
               We only provide great products combined with excellent customer service. See what our satisfied customers
               are saying about our services.
