@@ -4,11 +4,11 @@ interface ReviewsProps extends React.HTMLProps<HTMLUListElement> {
   children: React.ReactNode
 }
 
-function Reviews({ children, ...props }: ReviewsProps) {
+function Reviews({ children, className = '', ...props }: ReviewsProps) {
   return (
-    <ul {...props}>
-      {React.Children.map(children, child => (
-        <li>{child}</li>
+    <ul className={`grid grid-cols-3 gap-8 ${className}`} {...props}>
+      {React.Children.map(children, (child, i) => (
+        <li className={`${i ? `mt-${4 * i}` : ''}`}>{child}</li>
       ))}
     </ul>
   )

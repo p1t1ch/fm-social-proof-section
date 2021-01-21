@@ -23,8 +23,21 @@ module.exports = {
         base: '.9375rem',
       },
       maxWidth: {
-        88: '21.875rem',
-        112: '27.8125rem',
+        md: '21.875rem',
+        lg: '27.8125rem',
+        xl: '69.375rem',
+      },
+      gridTemplateColumns: {
+        review: '2.5rem 1fr',
+      },
+      margin: {
+        18: '4.5rem',
+      },
+      gap: {
+        8: '1.875rem',
+      },
+      letterSpacing: {
+        blockquote: '-0.23px',
       },
     },
   },

@@ -4,7 +4,11 @@
 
 @layer base {
   html {
-    @apply scroll-behaviour-smooth bg-neutral text-primary text-base;
+    @apply scroll-behaviour-smooth bg-neutral;
+  }
+
+  body {
+    @apply text-primary text-base;
   }
 }
 

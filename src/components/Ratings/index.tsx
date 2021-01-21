@@ -4,11 +4,11 @@ interface RatingsProps extends React.HTMLProps<HTMLUListElement> {
   children: React.ReactNode
 }
 
-function Ratings({ children, ...props }: RatingsProps) {
+function Ratings({ children, className = '', ...props }: RatingsProps) {
   return (
-    <ul {...props}>
-      {React.Children.map(children, child => (
-        <li>{child}</li>
+    <ul className={`grid gap-4 ${className}`} {...props}>
+      {React.Children.map(children, (child, i) => (
+        <li className={`${i ? `ml-${12 * i}` : ''}`}>{child}</li>
       ))}
     </ul>
   )
